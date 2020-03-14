@@ -225,6 +225,7 @@ blockquote cite:before {
     min-height: 12%;
     z-index: 2;
     background: white;
+    border-top: 1px solid black;
 
 }
 
