@@ -269,6 +269,10 @@ blockquote cite:before {
     width: 100%;
 }
 
+#ozone_vs_covid p em {
+    color: #fff!important
+}
+
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
  * On tablets and other medium-sized devices, we want to customize some

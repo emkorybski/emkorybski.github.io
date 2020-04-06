@@ -40,6 +40,12 @@ p {
     padding: .5em .7em;
 }
 
+#logo_mini {
+    height: 20px;
+    width: auto;
+}
+
+
 
 /*
  * -- BANNER --
@@ -49,14 +55,14 @@ p {
  */
 
 .banner {
-    background: transparent url('http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg') 0 0 no-repeat fixed;
+    /* background: transparent url('http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg') 0 0 no-repeat fixed;*/
     text-align: center;
     background-size: cover;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg', sizingMethod='scale');
-
+    background-color: darkblue;
     height: 200px;
     width: 100%;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     display: table;
     font-family: 'Raleway', sans-serif;
 }
@@ -65,7 +71,7 @@ p {
         display: table-cell;
         vertical-align: middle;
         margin-bottom: 0;
-        font-size: 2em;
+        font-size: 1.5em;
         color: white;
         font-weight: 500;
         text-shadow: 0 1px 1px black;
@@ -74,7 +80,7 @@ p {
     .banner-body {  
         text-align: center;
         margin-bottom: 0;
-        font-size: 18px;
+        font-size: 1em;
         color: white;
         font-weight: 700;
         text-shadow: 0 1px 1px black;
@@ -154,6 +160,19 @@ p {
         *color: #fff;
     }
 
+    .pricing-table-price span.second_level {
+        text-transform: none;
+        font-size: 0.1em;
+        padding-bottom: 2em;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.5);
+        *color: #fff;
+    }
+    .pricing-table-price span em {
+        color: #fff!important
+    }
+
+
 
 
 /*
@@ -218,7 +237,7 @@ p {
 @media(min-width: 767px) {
 
     .banner-head {
-        font-size: 4em;
+        font-size: 3em;
     }
     .pricing-table {
         margin-bottom: 0;
@@ -235,6 +254,6 @@ p {
         height: 400px;
     }
     .banner-head {
-        font-size: 3em;
+        font-size: 2em;
     }
 }
