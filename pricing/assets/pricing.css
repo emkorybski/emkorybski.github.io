@@ -12,10 +12,6 @@ h2, h3 {
     font-weight: 600;
 }
 
-p {
-    line-height: 1.6em;
-}
-
 
 /*
  * -- Layout Styles --
@@ -55,38 +51,40 @@ p {
  */
 
 .banner {
-    /* background: transparent url('http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg') 0 0 no-repeat fixed;*/
+    background: transparent url('ozone_in_sun.png') 0 0 no-repeat fixed;
     text-align: center;
     background-size: cover;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg', sizingMethod='scale');
     background-color: darkblue;
-    height: 200px;
+    height: 240px;
     width: 100%;
-    margin-bottom: 2em;
-    display: table;
     font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
 }
 
-    .banner-head {
-        display: table-cell;
-        vertical-align: middle;
-        margin-bottom: 0;
-        font-size: 1.5em;
-        color: white;
-        font-weight: 500;
-        text-shadow: 0 1px 1px black;
-        font-family: 'Raleway', sans-serif;
+    #banner-bg {
+        font-size: 1.2em;
+        padding-top: 20px;
     }
-    .banner-body {  
-        text-align: center;
-        margin-bottom: 0;
-        font-size: 1em;
-        color: white;
-        font-weight: 700;
-        text-shadow: 0 1px 1px black;
+    #banner-bg #left {
+        background-color: white;
+        border-radius: 10px 10px 0 10px;
+        width:250px;
+        height:auto;
+        padding: 10px; 
+        margin-left: 10%;
+        margin-top: 20px;
     }
-
-
+    #banner-bg #right {
+        background-color: white;
+        border-radius: 0 10px 10px 10px;
+        width:250px;
+        height:auto;
+        padding: 10px; 
+        margin-right: 10%;
+        margin-top: 30px; 
+        float: right;
+    }
 
 /*
  * -- PRICING TABLE WRAPPER --
@@ -107,7 +105,6 @@ p {
  * Every pricing table has the .pricing-table class
  */
 .pricing-table {
-    border: 1px solid #ddd;
     margin: 0 0.5em 2em;
     padding: 0 0 3em;
 }
@@ -122,6 +119,12 @@ p {
 
 .pricing-table-biz .pricing-table-header {
     background: #2c4985;
+}
+
+.pricing-table-special .pricing-table-header {
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15) inset, 0 0 6px rgba(0,0,0,.2) inset;
+    background-color: #e6e6e6;
+    color: darkgrey;
 }
 
 /*
@@ -158,6 +161,16 @@ p {
         font-weight: 400;
         color: rgba(255, 255, 255, 0.5);
         *color: #fff;
+    }
+    .pricing-table-special span {
+
+        color: rgba(0,0,0,0.8);
+
+    }
+    .pricing-table-special span span.second_level {
+
+        color: rgba(0,0,0,0.8);
+
     }
 
     .pricing-table-price span.second_level {
@@ -223,9 +236,15 @@ p {
     color: #888;
     text-align: center;
 }
+.footer.l-box {
+    font-size: 13px;
+    line-height: 1.6em;
+    color: #7f8c8d;
+}
     .footer a {
         color: #ddd;
     }
+
 
 
 
@@ -237,7 +256,7 @@ p {
 @media(min-width: 767px) {
 
     .banner-head {
-        font-size: 3em;
+        font-size: 1.2em;
     }
     .pricing-table {
         margin-bottom: 0;
@@ -251,9 +270,15 @@ p {
  */
 @media (min-width: 480px) {
     .banner {
-        height: 400px;
+        height: 240px;
+        background: transparent url('http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg') 0 0 no-repeat fixed;
     }
-    .banner-head {
-        font-size: 2em;
+    #banner-bg #left {
+        font-size: 1em;
+        width: 300px;
+    }
+    #banner-bg #right {
+        font-size: 1em;
+        width: 300px;
     }
 }
