@@ -51,7 +51,7 @@ h2, h3 {
  */
 
 .banner {
-    background: transparent url('ozone_in_sun.png') 0 0 no-repeat fixed;
+    background: transparent url('ozone_in_sun.png') center center no-repeat fixed;
     text-align: center;
     background-size: cover;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg', sizingMethod='scale');
@@ -74,6 +74,8 @@ h2, h3 {
         padding: 10px; 
         margin-left: 10%;
         margin-top: 20px;
+        border: 1px solid grey;
+        box-shadow: 0.2 0.2 grey;
     }
     #banner-bg #right {
         background-color: white;
@@ -84,6 +86,7 @@ h2, h3 {
         margin-right: 10%;
         margin-top: 30px; 
         float: right;
+        border: 1px solid grey;
     }
 
 /*
@@ -202,7 +205,7 @@ h2, h3 {
 
 /*
  * -- PRICING TABLE LIST ELEMENTS --
- * Styles for the individual list elements within each pricing table
+ * Styles for the individual list elements within each pricing table/
  */
 .pricing-table-list li {
     padding: 0.8em 0;
@@ -271,7 +274,7 @@ h2, h3 {
 @media (min-width: 480px) {
     .banner {
         height: 240px;
-        background: transparent url('http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg') 0 0 no-repeat fixed;
+        background: transparent url('http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg') center center no-repeat fixed;
     }
     #banner-bg #left {
         font-size: 1em;
