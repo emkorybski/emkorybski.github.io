@@ -33,7 +33,7 @@ a {
 
 .pure-img-responsive {
     max-width: 100%;
-    height: auto;
+    max-height: 200px;
 }
 
 /*
@@ -329,6 +329,15 @@ blockquote cite:before {
         border: none;
     }
 
+    .pure-u-md-1-2, .pure-u-md-12-24 {
+        width: 49%;
+        margin-right:1%;
+    }
+    .pure-img-responsive {
+        max-width: 100%;
+        max-height: 300px;
+    }
+
 }
 
 /*
@@ -340,5 +349,9 @@ blockquote cite:before {
     /* We increase the header font size even more */
     .splash-head {
         font-size: 300%;
+    }
+    .pure-img-responsive {
+        max-width: 100%;
+        max-height: 400px;
     }
 }   
