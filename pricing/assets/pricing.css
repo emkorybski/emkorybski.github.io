@@ -248,8 +248,12 @@ h2, h3 {
         color: #ddd;
     }
 
+/* specific link styles */
 
-
+.pure-menu-link.terms:hover {
+    background-color: transparent;
+    font-weight: bold
+}
 
 /*
  * -- TABLET MEDIA QUERIES --
