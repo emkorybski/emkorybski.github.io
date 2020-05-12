@@ -36,6 +36,19 @@ a {
     max-height: 200px;
 }
 
+#slogan {
+     font-family: 'Raleway', sans-serif;
+     color: #1b86d7;
+     font-size: 3em;
+     letter-spacing: 3px;
+}
+
+#sub_slogan {
+     font-family: 'Raleway', sans-serif;
+     color: #1b86d7;
+     font-size: 1.5em;
+}
+
 /*
  * -- LAYOUT STYLES --
  * These are some useful classes which I will need

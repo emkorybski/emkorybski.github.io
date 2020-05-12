@@ -66,7 +66,7 @@ h2, h3 {
         font-size: 1.2em;
         padding-top: 20px;
     }
-    #banner-bg #left {
+    #banner-bg .left {
         background-color: white;
         border-radius: 10px 10px 0 10px;
         width:250px;
@@ -178,7 +178,7 @@ h2, h3 {
 
     .pricing-table-price span.second_level {
         text-transform: none;
-        font-size: 0.1em;
+        font-size: 12px;
         padding-bottom: 2em;
         font-weight: 400;
         color: rgba(255, 255, 255, 0.5);
@@ -281,7 +281,7 @@ h2, h3 {
         background: #7f8c8d url('http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg') center center no-repeat fixed;
         background-size: 100% 100%;
     }
-    #banner-bg #left {
+    #banner-bg .left {
         font-size: 1em;
         width: 300px;
     }
