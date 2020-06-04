@@ -30,9 +30,6 @@
         <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
     <![endif]-->
 
-    <!-- Global cookie consent -->
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163959635-1"></script>
     <script>
@@ -40,7 +37,10 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'UA-163959635-1');
+      gtag('config', 'UA-163959635-1', {
+          'client_storage': 'none'
+        });
+
     </script>
 
 </head>
@@ -57,37 +57,7 @@
             <li class="pure-menu-item"><a href="pricing/default.html" class="pure-menu-link">Pricing</a></li>          
         </ul>
     </div>
-    <div id="cookieconsent"></div>
 
-    <script>
-        window.cookieconsent.initialise({
-            container: document.getElementById("cookieconsent"),
-            palette:{
-             popup: {background: "#1aa3ff"},
-             button: {background: "#e0e0e0"},
-            },
-            revokable: true,
-            onStatusChange: function(status) {
-             console.log(this.hasConsented() ?
-              'enable cookies' : 'disable cookies');
-            },
-            "position": "bottom-left",
-            "theme": "classic",
-            "secure": false,
-            "content": {
-              "header": 'Cookies used on the website!',
-              "message": 'This website uses cookies to improve your experience.',
-              "dismiss": 'Got it!',
-              "allow": 'Allow cookies',
-              "deny": 'Decline',
-              "link": 'Learn more',
-              "href": 'http://www.smellfixers.com/terms/default.html',
-              "close": '&#x274c;',
-              "policy": 'Cookie Policy',
-              "target": '_blank',
-              }
-           });
-    </script>
 
 </div>
 
